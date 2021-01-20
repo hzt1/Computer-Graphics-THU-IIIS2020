@@ -1,4 +1,5 @@
-# Computer-Graphics-THU-IIIS2020
+# Computer-Graphics-THU-IIIS2020-ArsenalChampions
+
 
 The image is rendered using PPM algorithm.
 
