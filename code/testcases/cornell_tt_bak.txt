@@ -1,0 +1,132 @@
+PerspectiveCamera {
+    center 50 44 210
+    direction 0 0 -1
+    up 0 1 0
+    angle 45
+    width 400
+    height 300
+}
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 8
+    Material {
+        color 0.75 0.25 0.25
+    }
+    Material {
+        color 0.25 0.25 0.75
+    }
+    Material {
+        color 0.75 0.75 0.75
+    }
+    Material { 
+        color 0.999 0.999 0.999 
+        reflection 1
+    }
+    Material { 
+        color 0.93 0.07 0.04
+        reflection 2
+    }
+    Material {
+        color 0 0 0
+        emissionColor 12 12 12
+    }
+    
+    Material {
+        color 0.25 0.7 0.95
+    }
+    Material {
+        color 0.6 0.6 0.6
+    }
+}
+
+Group {
+    numObjects 13
+
+    MaterialIndex 2
+    Plane {
+        normal 0 0 1
+        offset 0
+        
+        texture Emirates.ppm
+        x-axis 5 0 0
+        y-axis 0 10.9 0
+        x-offset -350
+        y-offset 0
+    }
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+    
+    Plane {
+        normal 1 0 0
+        offset -100
+    }
+    
+    Plane {
+        normal -1 0 0
+        offset -200
+    }
+    
+    Plane {
+        normal 0 0 -1
+        offset -250
+    }
+
+    MaterialIndex 7
+
+    TriangleMesh {
+        obj_file mesh/champions.obj
+        scale 30
+        offset 0 0 70
+    }
+    
+    TriangleMesh {
+        obj_file mesh/champions.obj
+        scale 30
+        offset 100 0 70
+    }
+
+    MaterialIndex 4
+
+        TriangleMesh {
+            obj_file mesh/arsenal-logo.obj
+            scale 20
+            offset 50 15 85
+        }
+
+    
+    MaterialIndex 6
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+
+        texture sky.ppm
+        x-axis 2 0 0
+        y-axis 0 0 1.8
+        x-offset -120
+        y-offset 0
+    }
+
+    MaterialIndex 5
+    Sphere {
+        center 50 80 80
+        radius 0.3
+    }
+    Sphere {
+        center 50 40 30
+        radius 0.3
+    }
+    Sphere {
+        center -15 60 100
+        radius 0.3
+    }
+    Sphere {
+        center 115 60 100
+        radius 0.3
+    }
+}

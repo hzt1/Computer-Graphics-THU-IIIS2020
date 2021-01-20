@@ -1,0 +1,13 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl soccer_shoes
+Ns 10.000002
+Ka 1.000000 1.000000 1.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.090000 0.090000 0.090000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 2
+map_Kd D:\\2020fall\\CG\\project\\soccer_shoes_v1_L3.123c816b27d2-6d7d-4202-9c68-1b4d112771a3\\soccer_shoes.jpg

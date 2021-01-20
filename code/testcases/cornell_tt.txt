@@ -1,0 +1,176 @@
+PerspectiveCamera {
+    center 50 44 210
+    direction 0 0 -1
+    up 0 1 0
+    angle 45
+    width 1024
+    height 768
+}
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 11
+    Material {
+        color 0.8 0.8 0.8
+    }
+    Material {
+        color 0.25 0.25 0.75
+    }
+    Material {
+        color 0.75 0.75 0.75
+    }
+    Material { 
+        color 0.999 0.999 0.999 
+        reflection 1
+    }
+    Material { 
+        color 0.93 0.07 0.04
+        reflection 2
+    }
+    Material {
+        color 0 0 0
+        emissionColor 12 12 12
+    }
+    
+    Material {
+        color 0.25 0.7 0.95
+    }
+    Material {
+        color 0.6 0.6 0.6
+        shininess 6
+    }
+
+    Material {
+        color 0.8 0.8 0.8
+    }
+    Material {
+        color 0.017388 0.017388 0.017388
+    }
+    
+    Material { 
+        color 0.97 0.6 0.08
+        reflection 1
+    }
+    
+}
+
+Group {
+    numObjects 16
+    
+    MaterialIndex 0
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+
+    MaterialIndex 2
+    Plane {
+        normal 0 0 1
+        offset 0
+        
+        texture Emirates.ppm
+        x-axis 4.5 0 0
+        y-axis 0 10.9 0
+        x-offset -350
+        y-offset 0
+    }
+    
+    Plane {
+        normal 1 0 0
+        offset -100
+    }
+    
+    Plane {
+        normal -1 0 0
+        offset -200
+    }
+    
+    Plane {
+        normal 0 0 -1
+        offset -250
+    }
+    
+    MaterialIndex 8
+    
+    TriangleMesh {
+        obj_file mesh/ball1.obj
+        scale 4
+        offset 35 4 100
+    }
+    
+    MaterialIndex 9
+    
+    TriangleMesh {
+        obj_file mesh/ball2.obj
+        scale 4
+        offset 35 4 100
+    }
+    
+    MaterialIndex 10
+    
+    TriangleMesh {
+        obj_file mesh/shoe_r.obj
+        scale 0.8
+        offset 20 2 85
+    }
+    
+
+    MaterialIndex 7
+
+    TriangleMesh {
+        obj_file mesh/champion_new.obj
+        scale 30
+        offset 0 0 70
+        Y_inverse
+    }
+    
+    TriangleMesh {
+        obj_file mesh/champion_new.obj
+        scale 30
+        offset 100 0 70
+        Y_inverse
+    }
+
+    MaterialIndex 4
+
+        TriangleMesh {
+            obj_file mesh/arsenal-logo.obj
+            scale 30
+            offset 50 7 50
+        }
+
+    
+    MaterialIndex 6
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+
+        texture sky.ppm
+        x-axis 2 0 0
+        y-axis 0 0 1.8
+        x-offset -120
+        y-offset 0
+    }
+
+    MaterialIndex 5
+    Sphere {
+        center 50 80 80
+        radius 0.3
+    }
+    Sphere {
+        center 50 40 30
+        radius 0.3
+    }
+    Sphere {
+        center -10 60 80
+        radius 0.3
+    }
+    Sphere {
+        center 110 60 80
+        radius 0.3
+    }
+
+}

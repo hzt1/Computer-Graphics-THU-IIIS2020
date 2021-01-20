@@ -1,0 +1,124 @@
+PerspectiveCamera {
+    center 50 52 200
+    direction 0 0 -1
+    up 0 1 0
+    angle 60
+    width 400
+    height 300
+    focal -120
+}
+
+Background {
+    color 0 0 0 
+}
+
+Materials {
+    numMaterials 10
+    Material {
+        color 0.75 0.25 0.25
+    }
+    Material {
+        color 0.25 0.25 0.75
+    }
+    Material {
+        color 0.75 0.75 0.75
+    }
+    Material { 
+        color 0.999 0.999 0.999 
+        reflection 1
+    }
+    Material { 
+        color 0.999 0.999 0.999 
+        reflection 2
+    }
+    Material {
+        emissionColor 12 12 12
+    }
+    Material { 
+        color 0.66 0.66 0.33 
+    }
+    Material { 
+        color 0.66 0.33 0.66 
+    }
+    Material { 
+        color 0.33 0.84 0.33 
+    }
+    Material { 
+        color 0.33 0.33 0.66 
+    }
+}
+
+Group {
+    numObjects 12
+    MaterialIndex 0
+    Plane {
+        normal 1 0 0
+        offset 0
+    }
+    
+    MaterialIndex 1
+    Plane {
+        normal -1 0 0
+        offset -99
+    }
+
+    MaterialIndex 2
+    Plane {
+        normal 0 0 1
+        offset 0
+    }
+    Plane {
+        normal 0 1 0
+        offset 0
+    }
+    Plane {
+        normal 0 -1 0
+        offset -81.6
+    }
+
+    MaterialIndex 3
+    Sphere {
+        center 25 15 40
+        radius 15
+    }
+
+    MaterialIndex 4
+    Sphere {
+        center 70 15 60
+        radius 15
+    }
+
+    MaterialIndex 5
+    Sphere {
+        center 50 681.33 81.6
+        radius 600
+    }
+
+    MaterialIndex 6
+    TriangleMesh {
+        obj_file mesh/cube.obj
+        scale 10
+        offset 40 10 70
+    }
+
+    MaterialIndex 7
+    TriangleMesh {
+        obj_file mesh/bunny_200.obj
+        scale 80
+        offset 20 -5 90
+    }
+
+    MaterialIndex 8
+    TriangleMesh {
+        obj_file mesh/bunny_1k.obj
+        scale 60
+        offset 85 -4 100
+    }
+
+    MaterialIndex 9
+    TriangleMesh {
+        obj_file mesh/fixed.perfect.dragon.100K.0.07.obj
+        scale 15
+        offset 50 10 110
+    }
+}
